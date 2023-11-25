@@ -1,0 +1,26 @@
+package org.javaro.lecture;
+
+public class Player {
+	private String name;
+	private String playerNumber;
+	public Player(String playerNumber) {
+		this.playerNumber = playerNumber;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getplayerNumber() {
+		return this.playerNumber;
+	}
+	public void setplayerNumberr(String playerNumber) {
+		this.playerNumber = playerNumber;
+	}
+	public String toString() {
+		return "전화번호="+this.getplayerNumber()+", 대여자이름="+this.getName();
+	}
+}
+
+
