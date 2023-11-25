@@ -1,0 +1,42 @@
+package org.javaro.lecture;
+
+public class Shoe{
+	private String size; private String name; private String brand; private Player player;
+	public Shoe(String size, String name, Player player) {
+		this.size = size; this.name = name; this.player = player;
+	}
+	public void setsize(String size) {
+		this.size = size;
+	}
+	public String getsize() {
+		return this.size;
+	}
+	public void setname(String name) {
+		this.name = name;
+	}
+	public String getname() {
+		return this.name;
+	}
+	public void setbrand(String brand) {
+		this.brand = brand;
+	}
+	public String getbrand() {
+		return this.brand;
+	}
+	public void setPlayer(Player player) {
+		this.player = player;
+	}
+	public Player getPlayer() {
+		return this.player;
+	}
+	public String toString() {
+		String available;
+		if(this.getPlayer() == null) {
+			available = "대여가능";
+		}
+		else {
+			available = "대여자=" + this.getPlayer().getName();
+		}
+		return "사이즈=" + this.getsize() + ", 브랜드=" + this.getbrand() + ", 축구화 이름=" + this.getname() + ", " + available;
+	}
+}
